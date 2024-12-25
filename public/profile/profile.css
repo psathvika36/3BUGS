@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f); /* Colorful background */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  flex-direction: column;
+}
+
+.profile-icon {
+  background-color: #4CAF50;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+/* .dropdown { */
+  /* position:[_{{{CITATION{{{_1{](https://github.com/henriquegmendes/url-shortener-alfred/tree/bb8fda4cedbf8bee33efa5830fece6ad80841440/documentation%2Fredirect-to-url.md)[_{{{CITATION{{{_2{](https://github.com/ibrahimnurulhuda/HMFarmSecurity/tree/4a4aacddbdc6f84674b6e3119f78a3735870f9a8/index.php)[_{{{CITATION{{{_3{](https://github.com/elineboekweit/doomla/tree/bf91e31bb0a722ad64908b9711456ca0a9085f6e/admin%2Flogin.php) */
