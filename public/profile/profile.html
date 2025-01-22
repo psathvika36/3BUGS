@@ -10,15 +10,26 @@
   <header>
     <h1>3BUGS</h1>
   </header>
+  
   <div class="profile-container">
-    <div class="profile-icon" id="profileIcon">S</div>
-    <div class="profile-info">
-      <p id="usernameDisplay">User</p>
+    <div class="profile-icon-container">
+      <div class="profile-icon" id="profileIcon">S</div>
+      <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+          <li id="viewProfile">Profile</li>
+          <li id="viewSettings">Settings</li>
+          <li id="logout">Logout</li>
+        </ul>
+      </div>
     </div>
+    <div id="backArrow" style="display: none;">&larr; Back</div>
+    <div class="profile-info" id="content"></div>
   </div>
+  
   <footer>
     <p>&copy; 2024 3BUGS. All rights reserved.</p>
   </footer>
+    
   <script src="profile.js"></script>
 </body>
 </html>

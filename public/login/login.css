@@ -1,32 +1,39 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #ffecd2, #fcb69f); /* Colorful background */
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  /* margin: 0; */
-  /* padding: 0; */
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  /* padding: 0px; */
   text-align: center;
+  width: 100%;
+  height: 10%;
+  position: fixed; /* Fix the position */
+  top: 0;
 }
 
 .container {
-  max-width: 400px;
-  margin: 50px auto;
+  height: 500px;
+  width: 500px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px; /* Ensure form is not touching header */
+  margin-bottom: 60px; /* Ensure form is not touching footer */
 }
 
 h2 {
@@ -59,12 +66,44 @@ button:hover {
   background-color: #45a049;
 }
 
+input[type="checkbox"] {
+    width: auto;
+}
+label.remember-me {
+  display: flex;
+  align-items: center; /* Vertically aligns the text and checkbox */
+  gap: 8px; /* Adds space between the text and checkbox */
+  margin-top: 10px; /* Optional: Adjusts spacing from the previous element */
+}
+
+input[type="checkbox"] {
+  width: 100; /* Ensures the checkbox size is appropriate */
+  margin: 0; /* Removes any default margin around the checkbox */
+}
+label.remember-me {
+  display: flex;
+  align-items: center; /* Vertically aligns the text and checkbox */
+  gap: 8px; /* Adds space between the text and checkbox */
+  margin-top: 10px; /* Optional: Adjusts spacing from the previous element */
+}
+
+input[type="checkbox"] {
+  width: auto; /* Ensures the checkbox size is appropriate */
+  margin: 0; /* Removes any default margin around the checkbox */
+}
+
+
+/* label.remember-me { */
+    /* margin-top: -10px; Adjust to fine-tune vertical alignment */
+/* } */
+
+
 footer {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
-  position: fixed;
   width: 100%;
+  position: fixed; /* Fix the position */
   bottom: 0;
 }
